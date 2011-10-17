@@ -30,6 +30,9 @@ and view your site. The image should now be applied as a full screen background 
 
 Check out http://pippinsplugins.com/simple-fullscreen-background-image for screenshots and a demonstration video
 
+== Changelog ==
 
+= 1.0.3 =
 
+Fixed bug with upload window popup.
 
