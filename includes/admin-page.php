@@ -55,7 +55,7 @@ function fsb_admin_page() {
 				
 				<p>
 					<input id="fsb_settings[image]" name="fsb_settings[image]" type="text" class="upload_field" value="<?php echo $fsb_options['image']; ?>"/>
-					<input class="upload_image_button" type="button" value="Choose Image"/>
+					<input class="upload_image_button button-secondary" type="button" value="Choose Image"/>
 					<label class="description" for="fsb_settings[image]"><?php _e( 'This image will be applied to the background of your website' ); ?></label>
 				</p>
 

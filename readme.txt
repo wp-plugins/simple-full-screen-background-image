@@ -4,7 +4,7 @@ Author URI: http://pippinsplugins.com
 Plugin URI: http://pippinspages.com/simple-fullscreen-background-image
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=72HGD7SA97KPE
 Tags: background, fullscreen, image, bg image, full screen
-Requires at least: 3.2
+Requires at least: 3.0
 Tested up to: 3.2.1
 Stable tag: 1.0.1
 
