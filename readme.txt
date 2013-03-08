@@ -5,9 +5,8 @@ Plugin URI: http://pippinspages.com/simple-fullscreen-background-image
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=72HGD7SA97KPE
 Tags: background, fullscreen, image, bg image, full screen
 Requires at least: 3.0
-Tested up to: 3.3
-Stable tag: 1.0.1
-Contributors: mordauk
+Tested up to: 3.6
+Stable tag: 1.0.4
 
 This plugin lets provides a simple way to set an automatically scaled full screen background image.
 
@@ -33,7 +32,9 @@ Check out http://pippinsplugins.com/simple-fullscreen-background-image for scree
 
 == Changelog ==
 
-= 1.0.3 =
+= 1.0.4 =
 
-Fixed bug with upload window popup.
+* Fixed an issue with images loading via http when on an https site
+* Did some general code cleanup and improvement
+
 

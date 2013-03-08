@@ -2,7 +2,7 @@
 /*
 Plugin Name: Simple Full Screen Background Image
 Description: Easily set an automatically scaled full-screen background image
-Version: 1.0.3
+Version: 1.0.4
 Author: Pippin Williamson
 Author URI: http://pippinsplugins.com
 */
