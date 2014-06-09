@@ -1,10 +1,10 @@
 <?php
 
 function fsb_display_image() {
-	global $fsb_options;
+	global $sfsb_options;
 
-	if ( isset( $fsb_options['image'] ) ) {
-		$image = $fsb_options['image'];
+	if ( isset( $sfsb_options['image'] ) ) {
+		$image = $sfsb_options['image'];
 		if( is_ssl() ) {
 			$image = str_replace( 'http://', 'https://', $image );
 		}

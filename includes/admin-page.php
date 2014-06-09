@@ -1,9 +1,9 @@
 <?php
 
-function fsb_admin_page() {
+function sfsb_admin_page() {
 
-	global $fsb_options;
-	?>
+	global $sfsb_options;
+?>
 	<div class="wrap">
 		<div id="fsb-wrap" class="fsb-help">
 			<h2>Full Screen Background Image</h2>
@@ -21,14 +21,14 @@ function fsb_admin_page() {
 				<h4>Choose Your Image</h4>
 
 				<p>
-					<input id="fsb_settings[image]" name="fsb_settings[image]" type="text" class="upload_field" value="<?php echo $fsb_options['image']; ?>"/>
+					<input id="fsb_settings[image]" name="fsb_settings[image]" type="text" class="upload_field" value="<?php echo $sfsb_options['image']; ?>"/>
 					<input class="upload_image_button button-secondary" type="button" value="Choose Image"/>
 					<label class="description" for="fsb_settings[image]"><?php _e( 'This image will be applied to the background of your website' ); ?></label>
 				</p>
 
 				<p>
-					<?php if($fsb_options['image']) { ?>
-						<img src="<?php echo $fsb_options['image']; ?>" id="fsb_preview_image" style="padding: 3px; border: 1px solid #f0f0f0; max-width: 600px; overflow: hidden;"/>
+					<?php if( ! empty( $sfsb_options['image'] ) ) { ?>
+						<img src="<?php echo $sfsb_options['image']; ?>" id="fsb_preview_image" style="padding: 3px; border: 1px solid #f0f0f0; max-width: 600px; overflow: hidden;"/>
 					<?php } else { ?>
 						<img src="<?php echo plugin_dir_url( __FILE__ ) . 'preview.jpg'; ?>" id="fsb_preview_image" style="padding: 3px; border: 1px solid #f0f0f0; max-width: 600px; overflow: hidden;"/>
 					<?php } ?>
@@ -39,20 +39,18 @@ function fsb_admin_page() {
 					<input type="submit" class="button-primary" value="<?php _e( 'Save Options' ); ?>" />
 				</p>
 
-
 			</form>
 		</div><!--end fsb-wrap-->
 	</div><!--end wrap-->
-	<?php
-
+<?php
 }
-function fsb_init_admin() {
-	add_submenu_page( 'themes.php', 'Full Screen Background Image', 'Fullscreen BG Image', 'manage_options', 'full-screen-background', 'fsb_admin_page' );
+function sfsb_init_admin() {
+	add_submenu_page( 'themes.php', 'Full Screen Background Image', 'Fullscreen BG Image', 'manage_options', 'full-screen-background', 'sfsb_admin_page' );
 }
-add_action('admin_menu', 'fsb_init_admin');
+add_action('admin_menu', 'sfsb_init_admin');
 
 // register the plugin settings
-function fsb_register_settings() {
+function sfsb_register_settings() {
 	register_setting( 'fsb_register_settings', 'fsb_settings' );
 }
-add_action( 'admin_init', 'fsb_register_settings' );
+add_action( 'admin_init', 'sfsb_register_settings' );
