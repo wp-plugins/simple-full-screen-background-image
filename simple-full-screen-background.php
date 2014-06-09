@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Simple Full Screen Background Image
-Description: Easily set an automatically scaled full-screen background image
-Version: 1.0.2
+Description: Easily set an automatically scaled full-screen background images
+Version: 1.1
 Author: Pippin Williamson
 Author URI: http://pippinsplugins.com
 */
@@ -11,7 +11,7 @@ Author URI: http://pippinsplugins.com
 * global
 *****************************************/
 
-$fsb_options = get_option('fsb_settings');
+$sfsb_options = get_option('fsb_settings');
 
 /*****************************************
 * includes
